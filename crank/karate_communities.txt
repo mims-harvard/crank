@@ -1,0 +1,8 @@
+# Example of a node to community affiliations.
+# Each line represents a community and all members of the community are listed in a single line. The first entry in each line represents community name/id. 
+# If a node belongs to multiple communities, it is listed in multiple lines (for example, node 1).
+Cmt1 5 6 7 11 17
+Cmt2 20 14 3 4 2 1 8 13 18 22 12 5 6 7 11 17
+Cmt3 20 14 3 4 2 1 19 21 33 34 30 16
+Cmt4 25 26 32 28 29 24 19 21 33 34 30 16 27 15 23 10 31 9
+Cmt5 30 16 27 15 23 10 31 1 8 13
