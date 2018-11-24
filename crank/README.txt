@@ -1,5 +1,5 @@
 ========================================================================
-    CRank: An approach for prioritizing network communities
+    CRank: Prioritizing network communities
 ========================================================================
 
 This code implements a network community prioritization approach (CRank).
@@ -9,7 +9,7 @@ efficiently evaluates robustness and magnitude of structural features of
 each community and then combines these features to obtain the community
 prioritization. It can be used with any community detection method and
 scales to large networks. It uses only information provided by the network
-structure and does not requireany additional external metadata or labels.
+structure and does not require any additional external metadata or labels.
 
 The algorithm is described in:
 
@@ -23,9 +23,6 @@ Mac OS X, Linux and other Unix variants with GCC. Make sure that a
 C++ compiler is installed on the system. Visual Studio project files
 and makefiles are provided. For makefiles, compile the code with
 "make all".
-
-Included are also binaries for Linux (crank_linux), Mac (crank_mac)
-and Windows (crank_windows.exe). 
 
 ////////////////////////////////////////////////////////////////////////
 Website:
