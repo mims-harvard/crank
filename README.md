@@ -16,7 +16,7 @@ labels. However, when available, CRank can incorporate domain-specific metadata 
 performance. See our [paper](https://www.nature.com/articles/s41467-018-04948-5) for details on the algorithm.
 
 <p align="center">
-<img src="https://github.com/marinkaz/decagon/blob/master/images/crank-overview.png" width="600" align="center">
+<img src="https://github.com/marinkaz/crank/blob/master/images/crank-overview.png" width="600" align="center">
 </p>
   
 ## Usage: Zachary's Karate Club 
@@ -33,7 +33,7 @@ Club members into [two widely known factions](https://en.wikipedia.org/wiki/Zach
 whereas communities Cmt1, Cmt3 and Cmt5 represent less meaningful groups of the Karate Club members. 
 
 <p align="center">
-<img src="https://github.com/marinkaz/decagon/blob/master/images/karate-input.png" width="600" align="center">
+<img src="https://github.com/marinkaz/crank/blob/master/images/karate-input.png" width="600" align="center">
 </p>
 
 We now prioritize the detected communities using CRank. CRank takes as input the Zachary's Karate Club 
@@ -56,12 +56,14 @@ of people into which the karate club split after an argument between two teacher
 known in the literature but that was not used for prioritization.
 
 <p align="center">
-<img src="https://github.com/marinkaz/decagon/blob/master/images/karate-output.png" width="600" align="center">
+<img src="https://github.com/marinkaz/crank/blob/master/images/karate-output.png" width="600" align="center">
 </p> 
  
 Notice that CRank allows the input to consist of only network and community affiliation data, given 
 by switches `-i:` and `-c:`, respectively. As a result, CRank can be used with non-statistical community 
 detection methods.  
+
+See the [project website](http://snap.stanford.edu/crank) for more examples of usage. 
 
 ## Citing
 
@@ -97,6 +99,8 @@ This is a C++ implementation. To compile the code, do:
     
 CRank relies on [SNAP](https://github.com/snap-stanford/snap), a general-purpose network analysis 
 and graph mining library. 
+
+The code also includes `rra.py`, a simple Python implementation of CRank's rank aggregation algorithm.
 
 ## License
 
