@@ -22,11 +22,13 @@ def _cummax(x):
 
 def rra(data, prior=0.2, num_bin=4, num_iter=10,
         return_all=True, corr_stop=1):
-    # Assumption 1: data is a numpy matrix with communities in the rows
-    #               and values of relevancy measures in the columns.
-    # Assumption 2: data is real valued matrix such that higher value
-    #               is better (when converted to ranks the largest value
-    #               get rank 1).
+    # data:
+    #   - data is a numpy matrix with objects in rows and different ranked lists in columns.
+    #   - data is a real-valued matrix where entries with higher values indicate stronger preference.
+    #
+    # Note 1: Note that a higher value in data matrix is better and indicates a higher-priority of an object. When
+    # converted to ranks the largest value gets rank 1. If input data are ranks (i.e., lower values indicate higher
+    # priority), the ranks might need to be reversed.
     nr, nc = data.shape
     nrp = int(np.floor(nr * prior))
     print 'Nrp: %d' % nrp
